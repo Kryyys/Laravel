@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Jeu;
+use App\Models\Tag;
 
-class JeuController extends Controller
+class TagController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class JeuController extends Controller
      */
     public function index()
     {
-        $jeux = Jeu::all();
-        return view('jeux.index', ['jeux'=>$jeux]);
+        $tags = Tag::all();
+        return view('tags.index', ['tags'=>$tags]);
     }
 
     /**
@@ -25,8 +25,8 @@ class JeuController extends Controller
      */
     public function create()
     {
-        $jeu = new Jeu;
-        return view('jeux.create');
+        $tags = new Tag;
+        return view('tags.create');
     }
 
     /**
@@ -48,10 +48,10 @@ class JeuController extends Controller
      */
     public function show($id)
     {
-        $jeu = Jeu::find($id);
-        return view('jeux.show', [
-        'id_jeu' => $id,
-        'jeu' => $jeu
+        $tag = Tag::find($id);
+        return view('tags.show', [
+        'id_tag' => $id,
+        'tag' => $tag
         ]);
     }
 
@@ -63,11 +63,11 @@ class JeuController extends Controller
      */
     public function edit($id)
     {
-        $jeu = Jeu::find($id);
-        return view('jeux.edit', [
-            'id_jeu' => $id,
-            'jeu' => $jeu
-            ]);
+        $tag = Tag::find($id);
+        return view('tags.edit', [
+        'id_tag' => $id,
+        'tag' => $tag
+        ]);
     }
 
     /**

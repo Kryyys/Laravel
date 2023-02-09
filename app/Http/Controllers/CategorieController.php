@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Jeu;
+use App\Models\Categorie;
 
-class JeuController extends Controller
+class CategorieController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class JeuController extends Controller
      */
     public function index()
     {
-        $jeux = Jeu::all();
-        return view('jeux.index', ['jeux'=>$jeux]);
+        $cats = Categorie::all();
+        return view('categories.index', ['categories'=>$cats]);
     }
 
     /**
@@ -25,8 +25,8 @@ class JeuController extends Controller
      */
     public function create()
     {
-        $jeu = new Jeu;
-        return view('jeux.create');
+        $cat = new Categorie;
+        return view('tags.create');
     }
 
     /**
@@ -48,10 +48,10 @@ class JeuController extends Controller
      */
     public function show($id)
     {
-        $jeu = Jeu::find($id);
-        return view('jeux.show', [
-        'id_jeu' => $id,
-        'jeu' => $jeu
+        $cat = Categorie::find($id);
+        return view('categories.show', [
+        'id_categorie' => $id,
+        'categorie' => $cat
         ]);
     }
 
@@ -63,11 +63,11 @@ class JeuController extends Controller
      */
     public function edit($id)
     {
-        $jeu = Jeu::find($id);
-        return view('jeux.edit', [
-            'id_jeu' => $id,
-            'jeu' => $jeu
-            ]);
+        $cat = Categorie::find($id);
+        return view('categories.edit', [
+        'id_categorie' => $id,
+        'categorie' => $cat
+        ]);
     }
 
     /**

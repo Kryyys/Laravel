@@ -25,7 +25,8 @@ class JeuController extends Controller
      */
     public function create()
     {
-
+        $jeu = new Jeu;
+        return view('jeux.create');
     }
 
     /**

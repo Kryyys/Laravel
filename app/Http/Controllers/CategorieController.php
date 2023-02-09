@@ -26,7 +26,7 @@ class CategorieController extends Controller
     public function create()
     {
         $cat = new Categorie;
-        return view('tags.create');
+        return view('categories.create');
     }
 
     /**

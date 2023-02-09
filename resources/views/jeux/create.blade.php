@@ -19,7 +19,18 @@
 
                     <br>
 
-                    <input type="submit" value="Créer" name="creer" class="creer m-10">
+                    <div class="btn_modif">
+
+                        <div>
+                            <input type="submit" value="Créer" name="creer" class="creer m-10">
+                        </div>
+
+                        <div class="mt-10">
+                            <a href="{{route('jeux.index')}}">
+                                <div class="retour w-18">Retour</div>
+                            </a>
+                        </div>
+                    </div>
 
 
                 </div>
@@ -27,4 +38,3 @@
         </div>
     </div>
 </x-app-layout>
-

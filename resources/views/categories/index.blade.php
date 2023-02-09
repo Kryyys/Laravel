@@ -10,7 +10,7 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
 
-                <h1 class="text-center text-3xl font-bold underline pb-10">{{__("List of all Categorie")}}</h1>
+                    <h1 class="text-center text-3xl font-bold underline pb-10">{{__("List of all Categorie")}}</h1>
 
                     <div id="tableau">
 
@@ -22,9 +22,9 @@
                                     <th class="w-60">Libellé</th>
                                     <th class="w-72">Action</th>
                                     <th>
-                                        <x-creer>
-                                            Créer
-                                        </x-creer>
+                                        <div class="creer w-16">
+                                            <a href="{{route('categories.create')}}">Créer</a>
+                                        </div>
                                     </th>
                                 </tr>
                             </thead>

@@ -1,4 +1,4 @@
-@props(['jeu'])
+<!-- @props(['jeu'])
 @props(['categorie'])
 @props(['tag'])
 
@@ -18,4 +18,4 @@
 <a href="{{route('tags.index', $tag->id)}}">
     <div class="retour w-18">{{$slot}}</div>
 </a>
-@endif
+@endif -->

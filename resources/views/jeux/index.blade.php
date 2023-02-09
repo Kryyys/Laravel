@@ -22,9 +22,9 @@
                                     <th class="w-60">Titre</th>
                                     <th class="w-72">Action</th>
                                     <th>
-                                        <x-creer>
-                                            Créer
-                                        </x-creer>
+                                    <div class="creer w-16">
+                                            <a href="{{route('jeux.create')}}">Créer</a>
+                                        </div>
                                     </th>
                                 </tr>
                             </thead>

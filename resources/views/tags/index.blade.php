@@ -22,9 +22,9 @@
                                     <th class="w-60">Nom</th>
                                     <th class="w-72">Action</th>
                                     <th>
-                                        <x-creer>
-                                            Créer
-                                        </x-creer>
+                                    <div class="creer w-16">
+                                            <a href="{{route('tags.create')}}">Créer</a>
+                                        </div>
                                     </th>
                                 </tr>
                             </thead>

@@ -67,3 +67,16 @@ td a {
     display: flex;
     justify-content: right;
 }
+
+.btn_modif {
+    display: flex;
+    justify-content: left;
+}
+
+.retour {
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 9px;
+    color: white;
+    font-size: 1.1em;
+}

@@ -44,6 +44,10 @@ font-bold">
                         <div>
                             <button class="supprimer">Supprimer</button>
                         </div>
+
+                        <div> <x-back :jeu="$jeu">
+                                Retour
+                            </x-back></div>
                     </div>
 
                 </div>

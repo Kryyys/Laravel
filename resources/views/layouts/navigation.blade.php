@@ -21,6 +21,18 @@
                     <x-nav-link :href="route('jeux.index')" :active="request()->routeIs('jeux')">
                         {{ __('Jeux') }}
                     </x-nav-link>
+
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('categories.index')" :active="request()->routeIs('categories')">
+                        {{ __('Catégories') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('tags.index')" :active="request()->routeIs('tags')">
+                        {{ __('Tags') }}
+                    </x-nav-link>
+                </div>
                 </div>
             </div>
 

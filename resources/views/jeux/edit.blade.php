@@ -19,9 +19,17 @@
 
                     <br>
 
-                    <input type="submit" value="Modifier" name="modifier" class="modifier m-10">
+                    <div class="btn_modif">
 
+                        <div>
+                            <input type="submit" value="Modifier" name="modifier" class="modifier m-10">
+                        </div>
 
+                        <div class="mt-10">
+                            <x-back :jeu="$jeu">
+                                Retour
+                            </x-back></div>
+                    </div>
 
 
                 </div>
